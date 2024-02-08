@@ -8,6 +8,7 @@ deb http://kartolo.sby.datautama.net.id/ubuntu/ focal-proposed main restricted u
 fi
 
 
+
 if [[ $(cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g') == "debian" ]]; then
 mv /etc/apt/sources.list /etc/apt/sources.backup
 echo -e 'deb http://kartolo.sby.datautama.net.id/debian/ buster main contrib non-free
